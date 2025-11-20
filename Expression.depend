@@ -1,0 +1,101 @@
+# depslib dependency file v1.0
+1669930285 source:j:\documents de alain\cours\c++\projets\projet expression\squelette\main.cpp
+	<iostream>
+	"Constante.h"
+	"Addition.h"
+	"Soustraction.h"
+	"Division.h"
+	"Multiplication.h"
+
+1669983473 j:\documents de alain\cours\c++\projets\projet expression\squelette\include\constante.h
+	"Expression.h"
+
+1669983473 j:\documents de alain\cours\c++\projets\projet expression\squelette\include\expression.h
+	<iostream>
+
+1669983473 j:\documents de alain\cours\c++\projets\projet expression\squelette\include\addition.h
+	"OperateurBinaire.h"
+
+1669929395 j:\documents de alain\cours\c++\projets\projet expression\squelette\include\operateurbinaire.h
+	"Expression.h"
+
+1669930070 j:\documents de alain\cours\c++\projets\projet expression\squelette\include\soustraction.h
+	"OperateurBinaire.h"
+
+1669983473 j:\documents de alain\cours\c++\projets\projet expression\squelette\include\division.h
+	"OperateurBinaire.h"
+
+1669983473 j:\documents de alain\cours\c++\projets\projet expression\squelette\include\multiplication.h
+	"OperateurBinaire.h"
+
+1669983473 source:j:\documents de alain\cours\c++\projets\projet expression\squelette\src\addition.cpp
+	"Addition.h"
+
+1669983473 source:j:\documents de alain\cours\c++\projets\projet expression\squelette\src\constante.cpp
+	"Constante.h"
+
+1669983473 source:j:\documents de alain\cours\c++\projets\projet expression\squelette\src\division.cpp
+	"Division.h"
+
+1669929016 source:j:\documents de alain\cours\c++\projets\projet expression\squelette\src\expression.cpp
+	"Expression.h"
+
+1669983473 source:j:\documents de alain\cours\c++\projets\projet expression\squelette\src\multiplication.cpp
+	"Multiplication.h"
+
+1669930443 source:j:\documents de alain\cours\c++\projets\projet expression\squelette\src\operateurbinaire.cpp
+	"OperateurBinaire.h"
+
+1669930443 source:j:\documents de alain\cours\c++\projets\projet expression\squelette\src\soustraction.cpp
+	"Soustraction.h"
+
+1762953227 source:c:\users\adrie\desktop\isen\4a\poo\squelette\main.cpp
+	<iostream>
+	"Constante.h"
+	"Addition.h"
+	"Soustraction.h"
+	"Division.h"
+	"Multiplication.h"
+
+1762950810 c:\users\adrie\desktop\isen\4a\poo\squelette\include\constante.h
+	"Expression.h"
+
+1762950810 c:\users\adrie\desktop\isen\4a\poo\squelette\include\expression.h
+	<iostream>
+
+1762950810 c:\users\adrie\desktop\isen\4a\poo\squelette\include\addition.h
+	"OperateurBinaire.h"
+
+1762950810 c:\users\adrie\desktop\isen\4a\poo\squelette\include\operateurbinaire.h
+	"Expression.h"
+
+1762950810 c:\users\adrie\desktop\isen\4a\poo\squelette\include\soustraction.h
+	"OperateurBinaire.h"
+
+1762950810 c:\users\adrie\desktop\isen\4a\poo\squelette\include\division.h
+	"OperateurBinaire.h"
+
+1762950810 c:\users\adrie\desktop\isen\4a\poo\squelette\include\multiplication.h
+	"OperateurBinaire.h"
+
+1762954332 source:c:\users\adrie\desktop\isen\4a\poo\squelette\src\addition.cpp
+	"Addition.h"
+
+1762952101 source:c:\users\adrie\desktop\isen\4a\poo\squelette\src\constante.cpp
+	"Constante.h"
+
+1762954724 source:c:\users\adrie\desktop\isen\4a\poo\squelette\src\division.cpp
+	"Division.h"
+
+1762950810 source:c:\users\adrie\desktop\isen\4a\poo\squelette\src\expression.cpp
+	"Expression.h"
+
+1762954328 source:c:\users\adrie\desktop\isen\4a\poo\squelette\src\multiplication.cpp
+	"Multiplication.h"
+
+1762953149 source:c:\users\adrie\desktop\isen\4a\poo\squelette\src\operateurbinaire.cpp
+	"OperateurBinaire.h"
+
+1762954548 source:c:\users\adrie\desktop\isen\4a\poo\squelette\src\soustraction.cpp
+	"Soustraction.h"
+
