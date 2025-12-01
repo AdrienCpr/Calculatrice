@@ -1,0 +1,106 @@
+# depslib dependency file v1.0
+1669930285 source:j:\documents de alain\cours\c++\projets\projet expression\squelette\main.cpp
+	<iostream>
+	"Constante.h"
+	"Addition.h"
+	"Soustraction.h"
+	"Division.h"
+	"Multiplication.h"
+
+1669983473 j:\documents de alain\cours\c++\projets\projet expression\squelette\include\constante.h
+	"Expression.h"
+
+1669983473 j:\documents de alain\cours\c++\projets\projet expression\squelette\include\expression.h
+	<iostream>
+
+1669983473 j:\documents de alain\cours\c++\projets\projet expression\squelette\include\addition.h
+	"OperateurBinaire.h"
+
+1669929395 j:\documents de alain\cours\c++\projets\projet expression\squelette\include\operateurbinaire.h
+	"Expression.h"
+
+1669930070 j:\documents de alain\cours\c++\projets\projet expression\squelette\include\soustraction.h
+	"OperateurBinaire.h"
+
+1669983473 j:\documents de alain\cours\c++\projets\projet expression\squelette\include\division.h
+	"OperateurBinaire.h"
+
+1669983473 j:\documents de alain\cours\c++\projets\projet expression\squelette\include\multiplication.h
+	"OperateurBinaire.h"
+
+1669983473 source:j:\documents de alain\cours\c++\projets\projet expression\squelette\src\addition.cpp
+	"Addition.h"
+
+1669983473 source:j:\documents de alain\cours\c++\projets\projet expression\squelette\src\constante.cpp
+	"Constante.h"
+
+1669983473 source:j:\documents de alain\cours\c++\projets\projet expression\squelette\src\division.cpp
+	"Division.h"
+
+1669929016 source:j:\documents de alain\cours\c++\projets\projet expression\squelette\src\expression.cpp
+	"Expression.h"
+
+1669983473 source:j:\documents de alain\cours\c++\projets\projet expression\squelette\src\multiplication.cpp
+	"Multiplication.h"
+
+1669930443 source:j:\documents de alain\cours\c++\projets\projet expression\squelette\src\operateurbinaire.cpp
+	"OperateurBinaire.h"
+
+1669930443 source:j:\documents de alain\cours\c++\projets\projet expression\squelette\src\soustraction.cpp
+	"Soustraction.h"
+
+1762954496 source:c:\users\merwa\downloads\squelette\squelette\src\addition.cpp
+	"Addition.h"
+
+1762950865 c:\users\merwa\downloads\squelette\squelette\include\addition.h
+	"OperateurBinaire.h"
+
+1762950865 c:\users\merwa\downloads\squelette\squelette\include\operateurbinaire.h
+	"Expression.h"
+
+1762950865 c:\users\merwa\downloads\squelette\squelette\include\expression.h
+	<iostream>
+
+1764580183 source:c:\users\merwa\downloads\squelette\squelette\src\constante.cpp
+	"Constante.h"
+
+1762950865 c:\users\merwa\downloads\squelette\squelette\include\constante.h
+	"Expression.h"
+
+1762954528 source:c:\users\merwa\downloads\squelette\squelette\src\division.cpp
+	"Division.h"
+	<stdexcept>
+
+1762950865 c:\users\merwa\downloads\squelette\squelette\include\division.h
+	"OperateurBinaire.h"
+
+1762954435 source:c:\users\merwa\downloads\squelette\squelette\src\expression.cpp
+	"Expression.h"
+
+1762954519 source:c:\users\merwa\downloads\squelette\squelette\src\multiplication.cpp
+	"Multiplication.h"
+
+1762950865 c:\users\merwa\downloads\squelette\squelette\include\multiplication.h
+	"OperateurBinaire.h"
+
+1762954626 source:c:\users\merwa\downloads\squelette\squelette\src\operateurbinaire.cpp
+	"OperateurBinaire.h"
+
+1762954510 source:c:\users\merwa\downloads\squelette\squelette\src\soustraction.cpp
+	"Soustraction.h"
+
+1762950865 c:\users\merwa\downloads\squelette\squelette\include\soustraction.h
+	"OperateurBinaire.h"
+
+1764580366 source:c:\users\merwa\downloads\squelette\squelette\main.cpp
+	<iostream>
+	<fstream>
+	<stack>
+	<sstream>
+	<stdexcept>
+	"Constante.h"
+	"Addition.h"
+	"Soustraction.h"
+	"Division.h"
+	"Multiplication.h"
+
