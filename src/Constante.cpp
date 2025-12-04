@@ -7,19 +7,19 @@ Constante::Constante(float valeur)
 
 Constante::~Constante()
 {
-    //dtor
+    // dtor
 }
-
-
 
 void Constante::afficher_classique(ostream &os) {
     os << m_valeur;
 }
 
 void Constante::afficher_npi(ostream &os) {
-        // à compléter
+    // En NPI, une constante s affiche comme en classique
+    os << m_valeur;
 }
 
 float Constante::calculer() {
-        // à compléter
+    // Le resultat d une constante est sa valeur
+    return m_valeur;
 }
