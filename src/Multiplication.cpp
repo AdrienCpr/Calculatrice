@@ -17,9 +17,9 @@ void Multiplication::afficher_classique(ostream &os) {
 }
 
 void Multiplication::afficher_npi(ostream &os) {
-    GetOperandeGauche()->afficher_classique(os);
+    GetOperandeGauche()->afficher_npi(os);
     os << " ";
-    GetOperandeDroit()->afficher_classique(os);
+    GetOperandeDroit()->afficher_npi(os);
     os << " *";
 }
 
