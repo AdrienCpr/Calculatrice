@@ -1,5 +1,4 @@
 #include <iostream>
-
 using namespace std;
 
 #include "Constante.h"
@@ -7,49 +6,45 @@ using namespace std;
 #include "Soustraction.h"
 #include "Division.h"
 #include "Multiplication.h"
+#include "Variable.h"
+#include "Expression.h"
 
-int main(void) {
-    Constante c1(20.0);
+int main()
+{
+    // Expression : ((x + 3) * y) - 5
+    Variable x("x");
+    Constante c3(3.0f), c5(5.0f);
+    Variable y("y");
 
-    c1.afficher_classique();
-    cout << endl;
+    Addition add(&x, &c3);        // x + 3
+    Multiplication mul(&add, &y); // (x + 3) * y
+    Soustraction expr(&mul, &c5); // ((x + 3) * y) - 5
 
-    Constante c2(30.0);
-    Addition add1(&c1, &c2);
+    // valeurs des variables
+    Variable::setValeur("x", 2.0f);
+    Variable::setValeur("y", 5.0f);
 
-    add1.afficher_classique(cout);
-    cout << endl;
+    cout << "Classique : ";
+    expr.afficher_classique(cout);
+    cout << '\n';
 
-    add1.afficher_npi(cout);
-    cout << endl;
+    cout << "NPI : ";
+    expr.afficher_npi(cout);
+    cout << '\n';
 
-    Constante c3(34.0);
-    Multiplication m1(&c3, &add1);
+    cout << "Valeur : " << expr.calculer() << '\n';
 
-    m1.afficher_classique(cout);
-    cout << endl;
+    // Sauvegarde
+    sauvegarder_npi(expr, "expr.txt");
 
-    m1.afficher_npi(cout);
-    cout << endl;
+    // Rechargement
+    Expression *expr2 = charger_npi_fichier("expr.txt");
+    cout << "\nRechargee, NPI : ";
+    expr2->afficher_npi(cout);
+    cout << '\n';
+    cout << "Rechargee, valeur : " << expr2->calculer() << '\n';
 
-    Constante c4(50.0);
-    Constante c5(10.0);
-    Soustraction s1(&c4, &c5);
-
-    s1.afficher_classique(cout);
-    cout << endl;
-
-    s1.afficher_npi(cout);
-    cout << endl;
-
-    Division d1(&m1, &c5);
-
-    d1.afficher_classique(cout);
-    cout << endl;
-
-    d1.afficher_npi(cout);
-    cout << endl;
+    delete expr2; // (un jour on fera une vraie destruction récursive)
 
     return 0;
 }
-
