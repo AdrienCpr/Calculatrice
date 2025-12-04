@@ -1,5 +1,4 @@
 #include <iostream>
-
 using namespace std;
 
 #include "Constante.h"
@@ -7,49 +6,45 @@ using namespace std;
 #include "Soustraction.h"
 #include "Division.h"
 #include "Multiplication.h"
+#include "Expression.h"
 
-int main(void) {
-    Constante c1(20.0);
+int main() {
+    // ((20 + 30) * 2) - 5
+    Constante c1(20.0f), c2(30.0f), c3(2.0f), c4(5.0f);
+    Addition add(&c1, &c2);
+    Multiplication mul(&add, &c3);
+    Soustraction expr(&mul, &c4);
 
-    c1.afficher_classique();
-    cout << endl;
+    cout << "Classique: ";
+    expr.afficher_classique(cout);
+    cout << '\n';
 
-    Constante c2(30.0);
-    Addition add1(&c1, &c2);
+    cout << "NPI: ";
+    expr.afficher_npi(cout);
+    cout << '\n';
 
-    add1.afficher_classique(cout);
-    cout << endl;
+    cout << "Valeur: " << expr.calculer() << '\n';
 
-    add1.afficher_npi(cout);
-    cout << endl;
+    // Sauvegarde
+    sauvegarder_npi(expr, "expression.txt");
 
-    Constante c3(34.0);
-    Multiplication m1(&c3, &add1);
+    // Rechargement
+    Expression *expr_chargee = charger_npi_fichier("expression.txt");
 
-    m1.afficher_classique(cout);
-    cout << endl;
+    cout << "\nAprès chargement depuis le fichier :\n";
 
-    m1.afficher_npi(cout);
-    cout << endl;
+    cout << "Classique: ";
+    expr_chargee->afficher_classique(cout);
+    cout << '\n';
 
-    Constante c4(50.0);
-    Constante c5(10.0);
-    Soustraction s1(&c4, &c5);
+    cout << "NPI: ";
+    expr_chargee->afficher_npi(cout);
+    cout << '\n';
 
-    s1.afficher_classique(cout);
-    cout << endl;
+    cout << "Valeur: " << expr_chargee->calculer() << '\n';
 
-    s1.afficher_npi(cout);
-    cout << endl;
-
-    Division d1(&m1, &c5);
-
-    d1.afficher_classique(cout);
-    cout << endl;
-
-    d1.afficher_npi(cout);
-    cout << endl;
+    // (pour l’instant on ne détruit pas récursivement tout l’arbre)
+    delete expr_chargee;
 
     return 0;
 }
-
