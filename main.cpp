@@ -8,8 +8,13 @@ using namespace std;
 #include "Division.h"
 #include "Multiplication.h"
 #include "ExpressionManager.h"
+#include "tests_runner.h"
+
 
 int main(void) {
+
+    run_all_tests();
+
     Constante c1(20.0);
 
     c1.afficher_classique();

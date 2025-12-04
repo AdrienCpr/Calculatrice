@@ -49,13 +49,15 @@
 1669930443 source:j:\documents de alain\cours\c++\projets\projet expression\squelette\src\soustraction.cpp
 	"Soustraction.h"
 
-1762954791 source:c:\users\adrie\desktop\isen\4a\poo\squelette\main.cpp
+1764840691 source:c:\users\adrie\desktop\isen\4a\poo\squelette\main.cpp
 	<iostream>
 	"Constante.h"
 	"Addition.h"
 	"Soustraction.h"
 	"Division.h"
 	"Multiplication.h"
+	"ExpressionManager.h"
+	"tests_runner.h"
 
 1762950810 c:\users\adrie\desktop\isen\4a\poo\squelette\include\constante.h
 	"Expression.h"
@@ -69,7 +71,7 @@
 1762950810 c:\users\adrie\desktop\isen\4a\poo\squelette\include\operateurbinaire.h
 	"Expression.h"
 
-1762950810 c:\users\adrie\desktop\isen\4a\poo\squelette\include\soustraction.h
+1764840491 c:\users\adrie\desktop\isen\4a\poo\squelette\include\soustraction.h
 	"OperateurBinaire.h"
 
 1762950810 c:\users\adrie\desktop\isen\4a\poo\squelette\include\division.h
@@ -98,4 +100,22 @@
 
 1762954548 source:c:\users\adrie\desktop\isen\4a\poo\squelette\src\soustraction.cpp
 	"Soustraction.h"
+
+1764837116 c:\users\adrie\desktop\isen\4a\poo\squelette\include\expressionmanager.h
+	"Singleton.h"
+	"Expression.h"
+
+1764836632 c:\users\adrie\desktop\isen\4a\poo\squelette\include\singleton.h
+
+1764840672 c:\users\adrie\desktop\isen\4a\poo\squelette\include\tests_runner.h
+
+1764840529 source:c:\users\adrie\desktop\isen\4a\poo\squelette\tests\test_expression.cpp
+	<iostream>
+	"Constante.h"
+	"Addition.h"
+
+1764840529 source:c:\users\adrie\desktop\isen\4a\poo\squelette\tests\test_singleton.cpp
+	<iostream>
+	"ExpressionManager.h"
+	"Constante.h"
 
