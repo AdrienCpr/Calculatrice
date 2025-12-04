@@ -7,13 +7,21 @@ using namespace std;
 #include "Division.h"
 #include "Multiplication.h"
 #include "Expression.h"
+#include "ExpressionManager.h"
+#include "tests_runner.h"
 
-int main() {
-    // ((20 + 30) * 2) - 5
-    Constante c1(20.0f), c2(30.0f), c3(2.0f), c4(5.0f);
-    Addition add(&c1, &c2);
-    Multiplication mul(&add, &c3);
-    Soustraction expr(&mul, &c4);
+
+int main(void) {
+
+    run_all_tests();
+
+    Constante c1(20.0);
+
+    c1.afficher_classique();
+    cout << endl;
+
+    Constante c2(30.0);
+    Addition add1(&c1, &c2);
 
     cout << "Classique: ";
     expr.afficher_classique(cout);
@@ -45,6 +53,17 @@ int main() {
 
     // (pour l’instant on ne détruit pas récursivement tout l’arbre)
     delete expr_chargee;
+
+    ExpressionManager::Instance().setExpression(&d1);
+
+    cout << "--- Expression via Singleton ---" << endl;
+
+    Expression* e = ExpressionManager::Instance().getExpression();
+
+    e->afficher_classique(cout);
+    cout << endl;
+    e->afficher_npi(cout);
+    cout << endl;
 
     return 0;
 }
