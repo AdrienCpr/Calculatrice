@@ -2,7 +2,7 @@
 
 Addition::Addition(Expression *opg, Expression *opd) : OperateurBinaire(opg, opd)
 {
-    // à compléter
+    // Ã  complÃ©ter
 }
 
 Addition::~Addition()
