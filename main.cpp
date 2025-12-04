@@ -7,6 +7,7 @@ using namespace std;
 #include "Soustraction.h"
 #include "Division.h"
 #include "Multiplication.h"
+#include "ExpressionManager.h"
 
 int main(void) {
     Constante c1(20.0);
@@ -50,6 +51,16 @@ int main(void) {
     d1.afficher_npi(cout);
     cout << endl;
 
+    ExpressionManager::Instance().setExpression(&d1);
+
+    cout << "--- Expression via Singleton ---" << endl;
+
+    Expression* e = ExpressionManager::Instance().getExpression();
+
+    e->afficher_classique(cout);
+    cout << endl;
+    e->afficher_npi(cout);
+    cout << endl;
+
     return 0;
 }
-
