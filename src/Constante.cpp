@@ -13,13 +13,13 @@ Constante::~Constante()
 
 
 void Constante::afficher_classique(ostream &os) {
-    os << m_valeur;
+        cout << m_valeur;
 }
 
 void Constante::afficher_npi(ostream &os) {
-        // à compléter
+        cout << m_valeur;
 }
 
 float Constante::calculer() {
-        // à compléter
+        return m_valeur;
 }
