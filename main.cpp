@@ -1,55 +1,40 @@
 #include <iostream>
-
 using namespace std;
 
 #include "Constante.h"
 #include "Addition.h"
-#include "Soustraction.h"
-#include "Division.h"
 #include "Multiplication.h"
+#include "Puissance.h"
 
-int main(void) {
-    Constante c1(20.0);
+#include "RacineCarre.h"
+#include "Inverse.h"
+#include "ValeurAbsolue.h"
+#include "LogNeperien.h"
 
-    c1.afficher_classique();
+int main() {
+    Constante c1(20.0f);
+    Constante c2(10.0f);
+    Constante cNeg(-5.0f);
+    Constante c2pow(2.0f);
+
+    Addition add(&c1, &c2);            // (20 + 10)
+    Puissance p(&add, &c2pow);         // (20 + 10) ^ 2
+    RacineCarree r(&p);                // sqrt( (20+10)^2 )
+    Inverse inv(&r);                   // inv( sqrt(...) )
+
+    ValeurAbsolue ab(&cNeg);           // abs(-5)
+    LogNeperien ln(&ab);               // ln(abs(-5))
+
+    Multiplication expr(&inv, &ln);    // inv(...) * ln(...)
+
+    cout << "Affichage classique : ";
+    expr.afficher_classique(cout);
     cout << endl;
 
-    Constante c2(30.0);
-    Addition add1(&c1, &c2);
-
-    add1.afficher_classique(cout);
+    cout << "Affichage NPI : ";
+    expr.afficher_npi(cout);
     cout << endl;
 
-    add1.afficher_npi(cout);
-    cout << endl;
-
-    Constante c3(34.0);
-    Multiplication m1(&c3, &add1);
-
-    m1.afficher_classique(cout);
-    cout << endl;
-
-    m1.afficher_npi(cout);
-    cout << endl;
-
-    Constante c4(50.0);
-    Constante c5(10.0);
-    Soustraction s1(&c4, &c5);
-
-    s1.afficher_classique(cout);
-    cout << endl;
-
-    s1.afficher_npi(cout);
-    cout << endl;
-
-    Division d1(&m1, &c5);
-
-    d1.afficher_classique(cout);
-    cout << endl;
-
-    d1.afficher_npi(cout);
-    cout << endl;
-
+    cout << "Resultat du calcul : " << expr.calculer() << endl;
     return 0;
 }
-
