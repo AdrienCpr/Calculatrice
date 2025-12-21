@@ -11,26 +11,21 @@ Division::~Division()
 
 
 void Division::afficher_classique(ostream &os) {
-    GetOperandeGauche()->afficher_classique(os);
-    os << " / ";
-    GetOperandeDroit()->afficher_classique(os);
+    cout << "( ";
+    GetOperandeGauche()->afficher_classique();
+    cout << " / ";
+    GetOperandeDroit()->afficher_classique();
+    cout << " )";
 }
 
 void Division::afficher_npi(ostream &os) {
-    GetOperandeGauche()->afficher_classique(os);
-    os << " ";
-    GetOperandeDroit()->afficher_classique(os);
-    os << " /";
+    GetOperandeGauche()->afficher_npi();
+    cout << " ";
+    GetOperandeDroit()->afficher_npi();
+    cout << " /\n";
 }
 
 
 float Division::calculer() {
-    float denominateur = GetOperandeDroit()->calculer();
-
-    if (denominateur == 0) {
-        cerr << "Erreur : division par zéro !" << endl;
-        return 0;
-    }
-
-    return GetOperandeGauche()->calculer() / denominateur;
+    return GetOperandeGauche()->calculer() / GetOperandeDroit()->calculer();
 }
