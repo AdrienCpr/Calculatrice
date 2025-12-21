@@ -8,6 +8,10 @@ using namespace std;
 #include "Division.h"
 #include "Multiplication.h"
 
+// AJOUT V2
+#include "Variable.h"
+#include "TableDesSymboles.h"
+
 int main(void) {
     Constante c1(20.0);
 
@@ -50,6 +54,49 @@ int main(void) {
     d1.afficher_npi(cout);
     cout << endl;
 
+    // ==========================================================
+    //                 AJOUT : V2 (Variables + TDS)
+    // ==========================================================
+    cout << "\n=== V2 : Tests Variables + TableDesSymboles ===\n";
+
+    TableDesSymboles tds;
+
+    // On demande "x" deux fois : on doit récupérer le même objet Variable (même pointeur)
+    Variable* x1 = tds.getOuCreer("x");
+    Variable* x2 = tds.getOuCreer("x");
+
+    cout << "Adresse x1 = " << x1 << "\n";
+    cout << "Adresse x2 = " << x2 << "\n";
+
+    // Affectation via la table
+    tds.affecter("x", 3.0f);
+
+    // Expression exemple : (20 + x)
+    Addition expr1(&c1, x1);
+
+    cout << "Expr1 classique : ";
+    expr1.afficher_classique(cout);
+    cout << "\nExpr1 NPI       : ";
+    expr1.afficher_npi(cout);
+    cout << "\nExpr1 calculee  : " << expr1.calculer() << "\n";
+
+    // Si on change x, expr1 doit changer aussi
+    tds.affecter("x", 10.0f);
+    cout << "Apres x = 10, Expr1 calculee : " << expr1.calculer() << "\n";
+
+    // Autre expression exemple : (34 * (x + 30))
+    Addition exprAdd(&(*x1), &c2);          // (x + 30)
+    Multiplication expr2(&c3, &exprAdd);    // 34 * (x + 30)
+
+    cout << "\nExpr2 classique : ";
+    expr2.afficher_classique(cout);
+    cout << "\nExpr2 NPI       : ";
+    expr2.afficher_npi(cout);
+    cout << "\nExpr2 calculee  : " << expr2.calculer() << "\n";
+
+    // Debug : afficher la table
+    cout << "\n--- Contenu TableDesSymboles ---\n";
+    tds.afficher(cout);
+
     return 0;
 }
-
