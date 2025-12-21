@@ -7,14 +7,14 @@
 class Variable : public Expression
 {
 public:
-    explicit Variable(const std::string& nom, float valeur = 0.0f);
+    Variable(const std::string& nom, float valeur = 0.0f);
     virtual ~Variable();
 
-    const std::string& GetNom() const { return m_nom; }
-    void SetNom(const std::string& nom) { m_nom = nom; }
+    const std::string& Getnom() const { return m_nom; }
+    void Setnom(const std::string& nom) { m_nom = nom; }
 
-    float GetValeur() const { return m_valeur; }
-    void SetValeur(float val) { m_valeur = val; }
+    float Getvaleur() const { return m_valeur; }
+    void Setvaleur(float val) { m_valeur = val; }
 
     void afficher_classique(ostream &os = cout) override;
     void afficher_npi(ostream &os = cout) override;

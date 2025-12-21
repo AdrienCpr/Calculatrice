@@ -7,7 +7,10 @@ using namespace std;
 #include "Soustraction.h"
 #include "Division.h"
 #include "Multiplication.h"
-#include "Variable.h"   // <-- AJOUT
+
+// V1 + V2
+#include "Variable.h"
+#include "TableDesSymboles.h"
 
 int main(void) {
     Constante c1(20.0);
@@ -52,36 +55,70 @@ int main(void) {
     cout << endl;
 
     // ==========================================================
-    //              AJOUT : TESTS VARIABLES (Itération 1)
+    //              V1 : TESTS VARIABLES (sans table)
     // ==========================================================
-    cout << "\n=== Tests Variables ===\n";
+    cout << "\n=== V1 : Tests Variables (sans table) ===\n";
 
-    Variable x("x");        // crée la variable x
-    x.SetValeur(3.0f);      // lui affecte une valeur
+    Variable x("x");
+    x.Setvaleur(3.0f);
 
-    // Exemple 1 : (x + 10)
-    Addition expr1(&x, &c5);   // c5 vaut 10.0
-    cout << "Expr1 classique : ";
-    expr1.afficher_classique(cout);
-    cout << "\nExpr1 NPI       : ";
-    expr1.afficher_npi(cout);
-    cout << "\nExpr1 calculee  : " << expr1.calculer() << "\n";
+    Addition v1_expr1(&x, &c5);      // (x + 10)
+    cout << "V1 Expr1 classique : ";
+    v1_expr1.afficher_classique(cout);
+    cout << "\nV1 Expr1 NPI       : ";
+    v1_expr1.afficher_npi(cout);
+    cout << "\nV1 Expr1 calculee  : " << v1_expr1.calculer() << "\n";
 
-    // Exemple 2 : (34 * (20 + x))
-    Addition add2(&c1, &x);
-    Multiplication expr2(&c3, &add2);
+    Addition v1_add2(&c1, &x);       // (20 + x)
+    Multiplication v1_expr2(&c3, &v1_add2); // 34 * (20 + x)
 
-    cout << "\nExpr2 classique : ";
-    expr2.afficher_classique(cout);
-    cout << "\nExpr2 NPI       : ";
-    expr2.afficher_npi(cout);
-    cout << "\nExpr2 calculee  : " << expr2.calculer() << "\n";
+    cout << "\nV1 Expr2 classique : ";
+    v1_expr2.afficher_classique(cout);
+    cout << "\nV1 Expr2 NPI       : ";
+    v1_expr2.afficher_npi(cout);
+    cout << "\nV1 Expr2 calculee  : " << v1_expr2.calculer() << "\n";
 
-    // Vérif : si on change x, toute l'expression change
-    x.SetValeur(10.0f);
-    cout << "\nApres x = 10 :\n";
-    cout << "Expr1 calculee  : " << expr1.calculer() << "\n";
-    cout << "Expr2 calculee  : " << expr2.calculer() << "\n";
+    x.Setvaleur(10.0f);
+    cout << "\nV1 Apres x = 10 :\n";
+    cout << "V1 Expr1 calculee  : " << v1_expr1.calculer() << "\n";
+    cout << "V1 Expr2 calculee  : " << v1_expr2.calculer() << "\n";
+
+    // ==========================================================
+    //                 V2 : TESTS VARIABLES + TDS
+    // ==========================================================
+    cout << "\n=== V2 : Tests Variables + TableDesSymboles ===\n";
+
+    TableDesSymboles tds;
+
+    Variable* x1 = tds.getOuCreer("x");
+    Variable* x2 = tds.getOuCreer("x");
+
+    cout << "Adresse x1 = " << x1 << "\n";
+    cout << "Adresse x2 = " << x2 << "\n";
+
+    tds.affecter("x", 3.0f);
+
+    Addition v2_expr1(&c1, x1);   // (20 + x)
+    cout << "V2 Expr1 classique : ";
+    v2_expr1.afficher_classique(cout);
+    cout << "\nV2 Expr1 NPI       : ";
+    v2_expr1.afficher_npi(cout);
+    cout << "\nV2 Expr1 calculee  : " << v2_expr1.calculer() << "\n";
+
+    tds.affecter("x", 10.0f);
+    cout << "V2 Apres x = 10, Expr1 calculee : " << v2_expr1.calculer() << "\n";
+
+    Addition v2_exprAdd(x1, &c2);               // (x + 30)
+    Multiplication v2_expr2(&c3, &v2_exprAdd);  // 34 * (x + 30)
+
+    cout << "\nV2 Expr2 classique : ";
+    v2_expr2.afficher_classique(cout);
+    cout << "\nV2 Expr2 NPI       : ";
+    v2_expr2.afficher_npi(cout);
+    cout << "\nV2 Expr2 calculee  : " << v2_expr2.calculer() << "\n";
+
+    cout << "\n--- Contenu TableDesSymboles ---\n";
+    tds.afficher(cout);
 
     return 0;
 }
