@@ -7,8 +7,26 @@ using namespace std;
 #include "Soustraction.h"
 #include "Division.h"
 #include "Multiplication.h"
+#include <memory>
+#include "ConstExpr.h"
+#include "BinaryExpr.h"
 
 int main(void) {
+
+    std::unique_ptr<Expression> expr =
+    std::make_unique<BinaryExpr>(
+        OpType::Add,
+        std::make_unique<ConstExpr>(10),
+        std::make_unique<ConstExpr>(30)
+    );
+
+    std::cout << "Expression de depart : " << *expr << "\n";
+
+    auto simplified = expr->simplify();
+    std::cout << "Expression simplifiee : " << *simplified << "\n";
+
+    std::cout << "Valeur : " << simplified->eval() << "\n";
+    
     Constante c1(20.0);
 
     c1.afficher_classique();
