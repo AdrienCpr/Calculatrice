@@ -2,8 +2,8 @@
 
 OperateurBinaire::OperateurBinaire(Expression *opg, Expression *opd)
 {
-    m_OperandeGauche = opg;
-    m_OperandeDroit = opd;
+    SetOperandeGauche(opg);
+    SetOperandeDroit(opd);
 }
 
 OperateurBinaire::~OperateurBinaire()
