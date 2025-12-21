@@ -11,16 +11,18 @@ Soustraction::~Soustraction()
 }
 
 void Soustraction::afficher_classique(ostream &os) {
-    GetOperandeGauche()->afficher_classique(os);
-    os << " - ";
-    GetOperandeDroit()->afficher_classique(os);
+    cout << "( ";
+    GetOperandeGauche()->afficher_classique();
+    cout << " - ";
+    GetOperandeDroit()->afficher_classique();
+    cout << " )";
 }
 
 void Soustraction::afficher_npi(ostream &os) {
-    GetOperandeGauche()->afficher_classique(os);
-    os << " ";
-    GetOperandeDroit()->afficher_classique(os);
-    os << " -";
+    GetOperandeGauche()->afficher_npi();
+    cout << " ";
+    GetOperandeDroit()->afficher_npi();
+    cout << " -\n";
 }
 
 float Soustraction::calculer() {
