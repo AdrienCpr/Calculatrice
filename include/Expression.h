@@ -1,22 +1,23 @@
-#ifndef EXPRESSION_H
-#define EXPRESSION_H
-
+// Expression.h
+#pragma once
+#include <memory>
 #include <iostream>
-using namespace std;
 
-class Expression
-{
-    public:
-        Expression();
-        virtual ~Expression();
+class Expression {
+public:
+    virtual ~Expression() = default;
 
-        virtual void afficher_classique(ostream &os = cout) = 0;
-        virtual void afficher_npi(ostream &os = cout) = 0;
-        virtual float calculer() = 0;
+    // Renvoie une nouvelle expression simplifiee
+    virtual std::unique_ptr<Expression> simplify() const = 0;
 
-    protected:
+    // Évaluation numerique (si possible)
+    virtual double eval() const = 0;
 
-    private:
+    // Pour afficher l’expression (debug)
+    virtual void print(std::ostream& os) const = 0;
 };
 
-#endif // EXPRESSION_H
+inline std::ostream& operator<<(std::ostream& os, const Expression& expr) {
+    expr.print(os);
+    return os;
+}
