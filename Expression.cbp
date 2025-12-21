@@ -36,6 +36,8 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="include/Addition.h" />
+		<Unit filename="include/BinaryExpr.h" />
+		<Unit filename="include/ConstExpr.h" />
 		<Unit filename="include/Constante.h" />
 		<Unit filename="include/Division.h" />
 		<Unit filename="include/Expression.h" />
@@ -50,6 +52,10 @@
 		<Unit filename="src/Multiplication.cpp" />
 		<Unit filename="src/OperateurBinaire.cpp" />
 		<Unit filename="src/Soustraction.cpp" />
+		<Unit filename="tests/test_expression.cpp" />
+		<Unit filename="tests/test_singleton.cpp" />
+		<Unit filename="tests/tests_operateurs.cpp" />
+		<Unit filename="tests/tests_runner.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>

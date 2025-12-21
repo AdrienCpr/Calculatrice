@@ -10,16 +10,31 @@ using namespace std;
 #include "Expression.h"
 #include "ExpressionManager.h"
 #include "tests_runner.h"
+#include <memory>
+#include "ConstExpr.h"
+#include "BinaryExpr.h"
 
 int main() {
     try {
         // Lancement de tous les tests
         run_all_tests();
 
-        cout << "\n--- Démonstration expressions simples ---" << endl;
+        std::unique_ptr<Expression> expr_new =
+        std::make_unique<BinaryExpr>(
+            OpType::Add,
+            std::make_unique<ConstExpr>(10),
+            std::make_unique<ConstExpr>(30)
+        );
+
+        std::cout << "Expression de depart : " << *expr_new << "\n";
+
+        auto simplified = expr_new->simplify();
+        std::cout << "Expression simplifiee : " << *simplified << "\n";
+        std::cout << "Valeur : " << simplified->eval() << "\n";
 
         // Partie provenant du deuxième main
         Constante c1(20.0);
+
         c1.afficher_classique(cout);
         cout << endl;
 

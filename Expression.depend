@@ -49,7 +49,7 @@
 1669930443 source:j:\documents de alain\cours\c++\projets\projet expression\squelette\src\soustraction.cpp
 	"Soustraction.h"
 
-1764852158 source:c:\users\adrie\desktop\isen\4a\poo\squelette\main.cpp
+1766312930 source:c:\users\adrie\desktop\isen\4a\poo\squelette\main.cpp
 	<iostream>
 	<exception>
 	"Constante.h"
@@ -60,13 +60,17 @@
 	"Expression.h"
 	"ExpressionManager.h"
 	"tests_runner.h"
+	<memory>
+	"ConstExpr.h"
+	"BinaryExpr.h"
 
 1762950810 c:\users\adrie\desktop\isen\4a\poo\squelette\include\constante.h
 	"Expression.h"
 
-1764845827 c:\users\adrie\desktop\isen\4a\poo\squelette\include\expression.h
+1766311668 c:\users\adrie\desktop\isen\4a\poo\squelette\include\expression.h
 	<iostream>
 	<string>
+	<memory>
 
 1762950810 c:\users\adrie\desktop\isen\4a\poo\squelette\include\addition.h
 	"OperateurBinaire.h"
@@ -89,7 +93,7 @@
 1764852344 source:c:\users\adrie\desktop\isen\4a\poo\squelette\src\constante.cpp
 	"Constante.h"
 
-1762954724 source:c:\users\adrie\desktop\isen\4a\poo\squelette\src\division.cpp
+1764852567 source:c:\users\adrie\desktop\isen\4a\poo\squelette\src\division.cpp
 	"Division.h"
 
 1764845063 source:c:\users\adrie\desktop\isen\4a\poo\squelette\src\expression.cpp
@@ -104,13 +108,13 @@
 	"Division.h"
 	"Multiplication.h"
 
-1762954328 source:c:\users\adrie\desktop\isen\4a\poo\squelette\src\multiplication.cpp
+1764852567 source:c:\users\adrie\desktop\isen\4a\poo\squelette\src\multiplication.cpp
 	"Multiplication.h"
 
 1762953149 source:c:\users\adrie\desktop\isen\4a\poo\squelette\src\operateurbinaire.cpp
 	"OperateurBinaire.h"
 
-1762954548 source:c:\users\adrie\desktop\isen\4a\poo\squelette\src\soustraction.cpp
+1764852567 source:c:\users\adrie\desktop\isen\4a\poo\squelette\src\soustraction.cpp
 	"Soustraction.h"
 
 1764844631 c:\users\adrie\desktop\isen\4a\poo\squelette\include\expressionmanager.h
@@ -142,4 +146,15 @@
 
 1764844631 source:c:\users\adrie\desktop\isen\4a\poo\squelette\tests\tests_runner.cpp
 	<iostream>
+
+1766311717 c:\users\adrie\desktop\isen\4a\poo\squelette\include\constexpr.h
+	"Expression.h"
+	<memory>
+	<iostream>
+
+1766312551 c:\users\adrie\desktop\isen\4a\poo\squelette\include\binaryexpr.h
+	"Expression.h"
+	<memory>
+	<iostream>
+	"ConstExpr.h"
 

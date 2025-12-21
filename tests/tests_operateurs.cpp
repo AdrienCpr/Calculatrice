@@ -162,12 +162,13 @@ int test_operateurs() {
             ok = false;
         }
 
-        if (oss_npi.str() == "5 + 3 2 *")
+        if (oss_npi.str() == "5 3 + 2 *")
             cout << "OK  : Expression composee afficher_npi" << endl;
         else {
             cout << "ERR : Expression composee afficher_npi -> \"" << oss_npi.str() << "\"" << endl;
             ok = false;
         }
+
     }
 
     // ==========================================================
