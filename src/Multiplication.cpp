@@ -11,16 +11,18 @@ Multiplication::~Multiplication()
 }
 
 void Multiplication::afficher_classique(ostream &os) {
-    GetOperandeGauche()->afficher_classique(os);
-    os << " * ";
-    GetOperandeDroit()->afficher_classique(os);
+    cout << "( ";
+    GetOperandeGauche()->afficher_classique();
+    cout << " x ";
+    GetOperandeDroit()->afficher_classique();
+    cout << " )";
 }
 
 void Multiplication::afficher_npi(ostream &os) {
-    GetOperandeGauche()->afficher_classique(os);
-    os << " ";
-    GetOperandeDroit()->afficher_classique(os);
-    os << " *";
+    GetOperandeGauche()->afficher_npi();
+    cout << " ";
+    GetOperandeDroit()->afficher_npi();
+    cout << " x\n";
 }
 
 float Multiplication::calculer() {
