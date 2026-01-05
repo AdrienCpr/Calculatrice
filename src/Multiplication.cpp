@@ -17,11 +17,11 @@ void Multiplication::afficher_classique(ostream &os) {
 }
 
 void Multiplication::afficher_npi(ostream &os) {
-    GetOperandeGauche()->afficher_classique(os);
-    os << " ";
-    GetOperandeDroit()->afficher_classique(os);
-    os << " *";
+    GetOperandeGauche()->afficher_npi(os);
+    GetOperandeDroit()->afficher_npi(os);
+    os << "* ";
 }
+
 
 float Multiplication::calculer() {
     return GetOperandeGauche()->calculer() * GetOperandeDroit()->calculer();

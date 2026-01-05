@@ -17,11 +17,11 @@ void Soustraction::afficher_classique(ostream &os) {
 }
 
 void Soustraction::afficher_npi(ostream &os) {
-    GetOperandeGauche()->afficher_classique(os);
-    os << " ";
-    GetOperandeDroit()->afficher_classique(os);
-    os << " -";
+    GetOperandeGauche()->afficher_npi(os);
+    GetOperandeDroit()->afficher_npi(os);
+    os << "- ";
 }
+
 
 float Soustraction::calculer() {
     return GetOperandeGauche()->calculer() - GetOperandeDroit()->calculer();
