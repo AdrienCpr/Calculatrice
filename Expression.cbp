@@ -42,6 +42,8 @@
 		<Unit filename="include/Multiplication.h" />
 		<Unit filename="include/OperateurBinaire.h" />
 		<Unit filename="include/Soustraction.h" />
+		<Unit filename="include/TableDesSymboles.h" />
+		<Unit filename="include/Variable.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Addition.cpp" />
 		<Unit filename="src/Constante.cpp" />
@@ -50,6 +52,8 @@
 		<Unit filename="src/Multiplication.cpp" />
 		<Unit filename="src/OperateurBinaire.cpp" />
 		<Unit filename="src/Soustraction.cpp" />
+		<Unit filename="src/TableDesSymboles.cpp" />
+		<Unit filename="src/Variable.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>
