@@ -67,7 +67,7 @@
 1762950810 c:\users\adrie\desktop\isen\4a\poo\squelette\include\constante.h
 	"Expression.h"
 
-1766311668 c:\users\adrie\desktop\isen\4a\poo\squelette\include\expression.h
+1766313004 c:\users\adrie\desktop\isen\4a\poo\squelette\include\expression.h
 	<iostream>
 	<string>
 	<memory>
@@ -135,7 +135,7 @@
 	"ExpressionManager.h"
 	"Constante.h"
 
-1764844631 source:c:\users\adrie\desktop\isen\4a\poo\squelette\tests\tests_operateurs.cpp
+1766312965 source:c:\users\adrie\desktop\isen\4a\poo\squelette\tests\tests_operateurs.cpp
 	<iostream>
 	<sstream>
 	"Constante.h"
@@ -157,4 +157,59 @@
 	<memory>
 	<iostream>
 	"ConstExpr.h"
+
+1767728993 source:c:\users\adrie\desktop\isen\4a\poo\squelette\src\carre.cpp
+	"Carre.h"
+
+1767730002 c:\users\adrie\desktop\isen\4a\poo\squelette\include\carre.h
+	"OperateurUnaire.h"
+
+1767730142 c:\users\adrie\desktop\isen\4a\poo\squelette\include\operateurunaire.h
+	"Expression.h"
+
+1767729093 source:c:\users\adrie\desktop\isen\4a\poo\squelette\src\inverse.cpp
+	"Inverse.h"
+	<limits>
+
+1767730044 c:\users\adrie\desktop\isen\4a\poo\squelette\include\inverse.h
+	"OperateurUnaire.h"
+
+1767729091 source:c:\users\adrie\desktop\isen\4a\poo\squelette\src\logneperien.cpp
+	"LogNeperien.h"
+	<cmath>
+	<limits>
+
+1767730144 c:\users\adrie\desktop\isen\4a\poo\squelette\include\logneperien.h
+	"OperateurUnaire.h"
+
+1767729202 source:c:\users\adrie\desktop\isen\4a\poo\squelette\src\operateurunaire.cpp
+	"OperateurUnaire.h"
+
+1767729283 source:c:\users\adrie\desktop\isen\4a\poo\squelette\src\oppose.cpp
+	"Oppose.h"
+
+1767730178 c:\users\adrie\desktop\isen\4a\poo\squelette\include\oppose.h
+	"OperateurUnaire.h"
+
+1767729343 source:c:\users\adrie\desktop\isen\4a\poo\squelette\src\puissance.cpp
+	"Puissance.h"
+	<cmath>
+
+1767730205 c:\users\adrie\desktop\isen\4a\poo\squelette\include\puissance.h
+	"OperateurBinaire.h"
+
+1767729375 source:c:\users\adrie\desktop\isen\4a\poo\squelette\src\racinecarre.cpp
+	"RacineCarre.h"
+	<cmath>
+	<limits>
+
+1767730233 c:\users\adrie\desktop\isen\4a\poo\squelette\include\racinecarre.h
+	"OperateurUnaire.h"
+
+1767729412 source:c:\users\adrie\desktop\isen\4a\poo\squelette\src\valeurabsolue.cpp
+	"ValeurAbsolue.h"
+	<cmath>
+
+1767730265 c:\users\adrie\desktop\isen\4a\poo\squelette\include\valeurabsolue.h
+	"OperateurUnaire.h"
 

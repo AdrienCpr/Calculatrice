@@ -1,5 +1,7 @@
 #include <iostream>
-#include <exception>    // pour std::exception
+#include <exception>
+#include <memory>
+
 using namespace std;
 
 #include "Constante.h"
@@ -10,21 +12,26 @@ using namespace std;
 #include "Expression.h"
 #include "ExpressionManager.h"
 #include "tests_runner.h"
-#include <memory>
+
 #include "ConstExpr.h"
 #include "BinaryExpr.h"
 
+#include "Puissance.h"
+#include "RacineCarre.h"
+#include "Inverse.h"
+#include "ValeurAbsolue.h"
+#include "LogNeperien.h"
+
 int main() {
     try {
-        // Lancement de tous les tests
         run_all_tests();
 
         std::unique_ptr<Expression> expr_new =
-        std::make_unique<BinaryExpr>(
-            OpType::Add,
-            std::make_unique<ConstExpr>(10),
-            std::make_unique<ConstExpr>(30)
-        );
+            std::make_unique<BinaryExpr>(
+                OpType::Add,
+                std::make_unique<ConstExpr>(10),
+                std::make_unique<ConstExpr>(30)
+            );
 
         std::cout << "Expression de depart : " << *expr_new << "\n";
 
@@ -32,9 +39,7 @@ int main() {
         std::cout << "Expression simplifiee : " << *simplified << "\n";
         std::cout << "Valeur : " << simplified->eval() << "\n";
 
-        // Partie provenant du deuxième main
         Constante c1(20.0);
-
         c1.afficher_classique(cout);
         cout << endl;
 
@@ -80,13 +85,11 @@ int main() {
         cout << "--- Expression via Singleton ---" << endl;
 
         Expression* e = ExpressionManager::Instance().getExpression();
-
         e->afficher_classique(cout);
         cout << endl;
         e->afficher_npi(cout);
         cout << endl;
 
-        // Partie provenant du premier main : ((20 + 30) * 2) - 5
         cout << "\n--- Expression complexe ((20 + 30) * 2) - 5 ---" << endl;
 
         Constante e1(20.0f), e2(30.0f), e3(2.0f), e4(5.0f);
@@ -106,12 +109,10 @@ int main() {
 
         // Sauvegarde / Rechargement avec gestion d'erreur locale
         try {
-            // Sauvegarde de cette expression
             sauvegarder_npi(expr, "expression.txt");
             cout << "Sauvegarde OK" << endl;
 
-            // Rechargement
-            Expression *expr_chargee = charger_npi_fichier("expression.txt");
+            Expression* expr_chargee = charger_npi_fichier("expression.txt");
             cout << "Chargement OK" << endl;
 
             cout << "\nAprès chargement depuis le fichier :" << '\n';
@@ -126,12 +127,36 @@ int main() {
 
             cout << "Valeur: " << expr_chargee->calculer() << '\n';
 
-            // (pour l’instant on ne détruit pas récursivement tout l’arbre)
             delete expr_chargee;
         }
         catch (const std::exception& ex) {
             cerr << "ERREUR pendant sauvegarde/chargement : " << ex.what() << endl;
         }
+
+        cout << "\n inv(sqrt((20+10)^2)) * ln(abs(-5)) ---" << endl;
+
+        Constante n1(20.0f);
+        Constante n2(10.0f);
+        Constante nNeg(-5.0f);
+        Constante nPow(2.0f);
+
+        Addition nAdd(&n1, &n2);             // (20 + 10)
+        Puissance nP(&nAdd, &nPow);          // (20 + 10) ^ 2
+        RacineCarree nR(&nP);                // sqrt( (20+10)^2 )
+        Inverse nInv(&nR);                   // inv( sqrt(...) )
+        ValeurAbsolue nAbs(&nNeg);           // abs(-5)
+        LogNeperien nLn(&nAbs);              // ln(abs(-5))
+        Multiplication nExpr(&nInv, &nLn);   // inv(...) * ln(...)
+
+        cout << "Affichage classique : ";
+        nExpr.afficher_classique(cout);
+        cout << endl;
+
+        cout << "Affichage NPI : ";
+        nExpr.afficher_npi(cout);
+        cout << endl;
+
+        cout << "Resultat du calcul : " << nExpr.calculer() << endl;
 
         return 0;
     }
