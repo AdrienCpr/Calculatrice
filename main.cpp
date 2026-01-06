@@ -8,6 +8,7 @@ using namespace std;
 #include "Multiplication.h"
 #include "Variable.h"
 #include "Expression.h"
+#include "TableDesSymboles.h"
 
 int main()
 {
@@ -21,8 +22,8 @@ int main()
     Soustraction expr(&mul, &c5); // ((x + 3) * y) - 5
 
     // valeurs des variables
-    Variable::setValeur("x", 2.0f);
-    Variable::setValeur("y", 5.0f);
+    x.Setvaleur(2.0f);
+    y.Setvaleur(5.0f);
 
     cout << "Classique : ";
     expr.afficher_classique(cout);
@@ -38,7 +39,8 @@ int main()
     sauvegarder_npi(expr, "expr.txt");
 
     // Rechargement
-    Expression *expr2 = charger_npi_fichier("expr.txt");
+    TableDesSymboles tds;
+    Expression *expr2 = charger_npi_fichier("expr.txt", tds);
     cout << "\nRechargee, NPI : ";
     expr2->afficher_npi(cout);
     cout << '\n';
