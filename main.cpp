@@ -4,6 +4,8 @@
 
 using namespace std;
 
+#include "tests_runner.h"
+
 #include "Constante.h"
 #include "Addition.h"
 #include "Soustraction.h"
@@ -24,7 +26,7 @@ using namespace std;
 
 int main() {
     try {
-        run_all_tests();
+        TestsRunner::run_all_tests();
 
         std::unique_ptr<Expression> expr_new =
             std::make_unique<BinaryExpr>(

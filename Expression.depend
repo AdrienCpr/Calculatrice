@@ -49,9 +49,11 @@
 1669930443 source:j:\documents de alain\cours\c++\projets\projet expression\squelette\src\soustraction.cpp
 	"Soustraction.h"
 
-1766312930 source:c:\users\adrie\desktop\isen\4a\poo\squelette\main.cpp
+1767730708 source:c:\users\adrie\desktop\isen\4a\poo\squelette\main.cpp
 	<iostream>
 	<exception>
+	<memory>
+	"tests_runner.h"
 	"Constante.h"
 	"Addition.h"
 	"Soustraction.h"
@@ -60,9 +62,13 @@
 	"Expression.h"
 	"ExpressionManager.h"
 	"tests_runner.h"
-	<memory>
 	"ConstExpr.h"
 	"BinaryExpr.h"
+	"Puissance.h"
+	"RacineCarre.h"
+	"Inverse.h"
+	"ValeurAbsolue.h"
+	"LogNeperien.h"
 
 1762950810 c:\users\adrie\desktop\isen\4a\poo\squelette\include\constante.h
 	"Expression.h"
@@ -123,7 +129,7 @@
 
 1764844631 c:\users\adrie\desktop\isen\4a\poo\squelette\include\singleton.h
 
-1764844631 c:\users\adrie\desktop\isen\4a\poo\squelette\include\tests_runner.h
+1767730865 c:\users\adrie\desktop\isen\4a\poo\squelette\include\tests_runner.h
 
 1764844631 source:c:\users\adrie\desktop\isen\4a\poo\squelette\tests\test_expression.cpp
 	<iostream>
