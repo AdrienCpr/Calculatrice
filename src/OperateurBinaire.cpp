@@ -8,5 +8,9 @@ OperateurBinaire::OperateurBinaire(Expression *opg, Expression *opd)
 
 OperateurBinaire::~OperateurBinaire()
 {
-    //dtor
+    delete m_OperandeGauche;
+    delete m_OperandeDroit;
+
+    m_OperandeGauche = nullptr;
+    m_OperandeDroit = nullptr;
 }

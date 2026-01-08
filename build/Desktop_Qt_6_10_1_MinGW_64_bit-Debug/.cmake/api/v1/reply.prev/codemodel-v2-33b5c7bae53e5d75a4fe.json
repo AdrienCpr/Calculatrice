@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-ee54a56532e23ac004f3.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "ProjetCalculatriceIHM",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ProjetCalculatriceIHM::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ProjetCalculatriceIHM-Debug-3206b4e17d6ffe113074.json",
+					"name" : "ProjetCalculatriceIHM",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ProjetCalculatriceIHM_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ProjetCalculatriceIHM_autogen-Debug-70d8c6b44fa26e016968.json",
+					"name" : "ProjetCalculatriceIHM_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ProjetCalculatriceIHM_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ProjetCalculatriceIHM_autogen_timestamp_deps-Debug-9063a07c51827a5c4c90.json",
+					"name" : "ProjetCalculatriceIHM_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/adrie/Desktop/gitC++ Main/Calculatrice/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug",
+		"source" : "C:/Users/adrie/Desktop/gitC++ Main/Calculatrice"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

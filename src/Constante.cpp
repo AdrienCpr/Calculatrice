@@ -17,9 +17,9 @@ void Constante::afficher_classique(ostream &os) {
 }
 
 void Constante::afficher_npi(ostream &os) {
-        // à compléter
+    os << m_valeur;
 }
 
 float Constante::calculer() {
-        // à compléter
+    return m_valeur;
 }

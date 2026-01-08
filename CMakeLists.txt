@@ -28,6 +28,26 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         ${PROJECT_SOURCES}
         src/Addition.cpp src/Constante.cpp src/Division.cpp src/Expression.cpp src/Multiplication.cpp src/OperateurBinaire.cpp src/Soustraction.cpp src/TableDesSymboles.cpp src/Variable.cpp
         include/Addition.h include/Constante.h include/Division.h include/Expression.h include/Multiplication.h include/OperateurBinaire.h include/Soustraction.h include/TableDesSymboles.h include/Variable.h
+        include/OperateurUnaire.h include/OperateurUnaire.h
+        src/OperateurUnaire.cpp
+        include/Carre.h
+        src/Carre.cpp
+        include/Oppose.h
+        include/RacineCarree.h
+        include/Inverse.h
+        include/ValeurAbsolue.h
+        include/LogNeperien.h
+        src/Oppose.cpp
+        src/RacineCarree.cpp
+        src/Inverse.cpp
+        src/ValeurAbsolue.cpp
+        src/LogNeperien.cpp
+        include/Puissance.h
+        src/Puissance.cpp
+        include/ExpressionManager.h
+        include/TestsRunner.h
+        src/TestsRunner.cpp
+
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET ProjetCalculatriceIHM APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR

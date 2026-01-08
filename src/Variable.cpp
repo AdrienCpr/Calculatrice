@@ -16,7 +16,7 @@ void Variable::afficher_classique(ostream &os)
 
 void Variable::afficher_npi(ostream &os)
 {
-    os << m_nom << " ";
+    os << m_nom;
 }
 
 float Variable::calculer()
