@@ -37,25 +37,39 @@
 		</Compiler>
 		<Unit filename="include/Addition.h" />
 		<Unit filename="include/BinaryExpr.h" />
+		<Unit filename="include/Carre.h" />
 		<Unit filename="include/ConstExpr.h" />
 		<Unit filename="include/Constante.h" />
 		<Unit filename="include/Division.h" />
 		<Unit filename="include/Expression.h" />
+		<Unit filename="include/Inverse.h" />
+		<Unit filename="include/LogNeperien.h" />
 		<Unit filename="include/Multiplication.h" />
 		<Unit filename="include/OperateurBinaire.h" />
+		<Unit filename="include/OperateurUnaire.h" />
+		<Unit filename="include/Oppose.h" />
+		<Unit filename="include/Puissance.h" />
+		<Unit filename="include/RacineCarre.h" />
 		<Unit filename="include/Soustraction.h" />
+		<Unit filename="include/Tests_runner.h" />
+		<Unit filename="include/ValeurAbsolue.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Addition.cpp" />
+		<Unit filename="src/Carre.cpp" />
 		<Unit filename="src/Constante.cpp" />
 		<Unit filename="src/Division.cpp" />
 		<Unit filename="src/Expression.cpp" />
+		<Unit filename="src/Inverse.cpp" />
+		<Unit filename="src/LogNeperien.cpp" />
 		<Unit filename="src/Multiplication.cpp" />
 		<Unit filename="src/OperateurBinaire.cpp" />
+		<Unit filename="src/OperateurUnaire.cpp" />
+		<Unit filename="src/Oppose.cpp" />
+		<Unit filename="src/Puissance.cpp" />
+		<Unit filename="src/RacineCarre.cpp" />
 		<Unit filename="src/Soustraction.cpp" />
-		<Unit filename="tests/test_expression.cpp" />
-		<Unit filename="tests/test_singleton.cpp" />
-		<Unit filename="tests/tests_operateurs.cpp" />
-		<Unit filename="tests/tests_runner.cpp" />
+		<Unit filename="src/Tests_runner.cpp" />
+		<Unit filename="src/ValeurAbsolue.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>

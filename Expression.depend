@@ -219,3 +219,21 @@
 1767730265 c:\users\adrie\desktop\isen\4a\poo\squelette\include\valeurabsolue.h
 	"OperateurUnaire.h"
 
+1767732760 source:c:\users\adrie\desktop\isen\4a\poo\squelette\src\tests_runner.cpp
+	"tests_runner.h"
+	<iostream>
+	<sstream>
+	"ExpressionManager.h"
+	"Constante.h"
+	"Addition.h"
+	"Soustraction.h"
+	"Multiplication.h"
+	"Division.h"
+
+1767883090 source:c:\users\adrie\desktop\isen\4a\poo\squelette\src\variable.cpp
+	"Variable.h"
+
+1767883055 c:\users\adrie\desktop\isen\4a\poo\squelette\include\variable.h
+	"Expression.h"
+	<string>
+

@@ -24,6 +24,8 @@ using namespace std;
 #include "ValeurAbsolue.h"
 #include "LogNeperien.h"
 
+#include "Variable.h"
+
 int main() {
     try {
         TestsRunner::run_all_tests();
@@ -40,6 +42,24 @@ int main() {
         auto simplified = expr_new->simplify();
         std::cout << "Expression simplifiee : " << *simplified << "\n";
         std::cout << "Valeur : " << simplified->eval() << "\n";
+
+        Variable x("x");      // création de la variable x
+
+        x.SetValeur(3.0f);    // affectation
+
+        cout << "Affichage classique : ";
+        x.afficher_classique(cout);
+        cout << endl;
+
+        cout << "Affichage NPI       : ";
+        x.afficher_npi(cout);
+        cout << endl;
+
+        cout << "Valeur calculee     : " << x.calculer() << endl;
+
+        // Test changement de valeur
+        x.SetValeur(10.0f);
+        cout << "Nouvelle valeur     : " << x.calculer() << endl;
 
         Constante c1(20.0);
         c1.afficher_classique(cout);

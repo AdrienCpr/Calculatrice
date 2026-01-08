@@ -190,7 +190,7 @@ bool TestsRunner::test_operateurs() {
 
         Division div0(&c5, &c0);
         float res = div0.calculer();
-        cerr << "INFO: Division par zero renvoie " << res << " (attendu : 0)" << endl;
+        cout << "INFO: Division par zero renvoie " << res << " (attendu : 0)" << endl;
     }
 
     if (ok) cout << "==> Tous les tests d'integration operateurs sont OK." << endl;
