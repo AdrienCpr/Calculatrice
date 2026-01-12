@@ -33,7 +33,7 @@ private:
     void appendText(const QString& s);
     void refreshDisplay();
 
-    // parse infix -> arbre Expression* (en utilisant tes classes)
+    // parse infix -> arbre Expression*
     Expression* buildExpressionFromInfix(const std::string& infix, double xValue);
 
 private slots:
@@ -69,13 +69,27 @@ private slots:
     void on_btnRPar_clicked();
     void on_btnX_clicked();
 
-    // fonctions unaires (tes features)
+    // fonctions unaires
     void on_btnSqrt_clicked();
     void on_btnLn_clicked();
     void on_btnAbs_clicked();
     void on_btnInv_clicked();
     void on_btnSq_clicked();
     void on_btnNeg_clicked();
+
+    // Menus
+    void on_actionSauvegarder_triggered();
+    void on_actionCharger_triggered();
+
+    void on_actionSaisieExpression_triggered();
+    void on_actionAffichage_notation_classique_triggered();
+    void on_actionAffichage_notation_P_I_triggered();
+    void on_actionAffichage_valeur_triggered();
+    void on_actionAffichage_graphique_2D_triggered();
+    void on_actionAffichage_graphique_3D_triggered();
+
+    void on_actionSimplification_triggered();
+
 };
 
 #endif // MAINWINDOW_H

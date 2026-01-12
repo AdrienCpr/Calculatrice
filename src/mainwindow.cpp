@@ -26,6 +26,8 @@
 #include "Inverse.h"
 #include "ValeurAbsolue.h"
 #include "LogNeperien.h"
+#include "Graph2dDialog.h"
+
 
 // ------------------ helpers affichage ------------------
 static std::string expr_classique(Expression* e){
@@ -305,9 +307,91 @@ APPEND_SLOT(btn0,"0") APPEND_SLOT(btn1,"1") APPEND_SLOT(btn2,"2") APPEND_SLOT(bt
     APPEND_SLOT(btnPow,"^") APPEND_SLOT(btnLPar,"(") APPEND_SLOT(btnRPar,")") APPEND_SLOT(btnX,"x")
 #undef APPEND_SLOT
 
-    void MainWindow::on_btnSqrt_clicked(){ appendText("sqrt("); }
+void MainWindow::on_btnSqrt_clicked(){ appendText("sqrt("); }
 void MainWindow::on_btnLn_clicked(){ appendText("ln("); }
 void MainWindow::on_btnAbs_clicked(){ appendText("abs("); }
 void MainWindow::on_btnInv_clicked(){ appendText("inv("); }
 void MainWindow::on_btnSq_clicked(){ appendText("sq("); }
 void MainWindow::on_btnNeg_clicked(){ appendText("neg("); }
+
+#include <QMessageBox>
+
+// ============ MENUS ============
+
+#include <QMessageBox>
+
+// ========= MENUS DU PROF =========
+
+void MainWindow::on_actionSauvegarder_triggered()
+{
+    // Reuse bouton Sauver (NPI)
+    on_btnSave_clicked();
+    if (ui->statusbar) ui->statusbar->showMessage("Sauvegarde NPI via menu.", 2000);
+}
+
+void MainWindow::on_actionCharger_triggered()
+{
+    // Reuse bouton Charger (NPI)
+    on_btnLoad_clicked();
+    if (ui->statusbar) ui->statusbar->showMessage("Chargement NPI via menu.", 2000);
+}
+
+void MainWindow::on_actionSaisieExpression_triggered()
+{
+    ui->leExpr->setFocus();
+    ui->leExpr->selectAll();
+    if (ui->statusbar) ui->statusbar->showMessage("Saisie : entre une expression puis '='.", 2000);
+}
+
+void MainWindow::on_actionAffichage_notation_classique_triggered()
+{
+    ui->pteDetails->appendPlainText("=== Notation classique (infix) ===");
+    ui->pteDetails->appendPlainText(ui->leExpr->text());
+}
+
+void MainWindow::on_actionAffichage_notation_P_I_triggered()
+{
+    try {
+        const std::string infix = ui->leExpr->text().toStdString();
+        double xVal = ui->sbX->value();
+
+        std::unique_ptr<Expression> e(buildExpressionFromInfix(infix, xVal));
+
+        std::ostringstream oss;
+        e->afficher_npi(oss);
+
+        ui->pteDetails->appendPlainText("=== Notation P.I (NPI) ===");
+        ui->pteDetails->appendPlainText(QString::fromStdString(oss.str()));
+    }
+    catch (const std::exception& ex) {
+        ui->pteDetails->appendPlainText("ERREUR NPI : " + QString(ex.what()));
+    }
+}
+
+
+void MainWindow::on_actionAffichage_valeur_triggered()
+{
+    on_btnEval_clicked();
+    if (ui->statusbar) ui->statusbar->showMessage("Évaluation via menu.", 2000);
+}
+
+void MainWindow::on_actionAffichage_graphique_2D_triggered()
+{
+    Graph2DDialog dlg(this);
+    dlg.exec();
+
+}
+
+void MainWindow::on_actionAffichage_graphique_3D_triggered()
+{
+    QMessageBox::information(this, "Graphique 3D",
+                             "Non implémenté pour le moment (autorisé).\n"
+                             "Les autres fonctionnalités sont actives.");
+}
+
+void MainWindow::on_actionSimplification_triggered()
+{
+    ui->pteDetails->appendPlainText("=== Simplification ===");
+    ui->pteDetails->appendPlainText("(À brancher sur simplify() : itération 2)");
+    if (ui->statusbar) ui->statusbar->showMessage("Simplification : placeholder (itération 2).", 2000);
+}

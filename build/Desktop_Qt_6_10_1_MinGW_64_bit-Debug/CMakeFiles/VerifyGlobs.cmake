@@ -42,6 +42,8 @@ endif()
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "C:/Users/adrie/Desktop/gitC++ Main/Calculatrice/*.cpp")
 set(OLD_GLOB
   "C:/Users/adrie/Desktop/gitC++ Main/Calculatrice/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/CMakeFiles/3.30.5/CompilerIdCXX/CMakeCXXCompilerId.cpp"
+  "C:/Users/adrie/Desktop/gitC++ Main/Calculatrice/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/ProjetCalculatriceIHM_autogen/6YEA5652QU/moc_ExpressionModel.cpp"
+  "C:/Users/adrie/Desktop/gitC++ Main/Calculatrice/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/ProjetCalculatriceIHM_autogen/6YEA5652QU/moc_Graph2dDialog.cpp"
   "C:/Users/adrie/Desktop/gitC++ Main/Calculatrice/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/ProjetCalculatriceIHM_autogen/6YEA5652QU/moc_mainwindow.cpp"
   "C:/Users/adrie/Desktop/gitC++ Main/Calculatrice/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/ProjetCalculatriceIHM_autogen/mocs_compilation.cpp"
   "C:/Users/adrie/Desktop/gitC++ Main/Calculatrice/main.cpp"
@@ -50,6 +52,7 @@ set(OLD_GLOB
   "C:/Users/adrie/Desktop/gitC++ Main/Calculatrice/src/Constante.cpp"
   "C:/Users/adrie/Desktop/gitC++ Main/Calculatrice/src/Division.cpp"
   "C:/Users/adrie/Desktop/gitC++ Main/Calculatrice/src/Expression.cpp"
+  "C:/Users/adrie/Desktop/gitC++ Main/Calculatrice/src/Graph2dDialog.cpp"
   "C:/Users/adrie/Desktop/gitC++ Main/Calculatrice/src/Inverse.cpp"
   "C:/Users/adrie/Desktop/gitC++ Main/Calculatrice/src/LogNeperien.cpp"
   "C:/Users/adrie/Desktop/gitC++ Main/Calculatrice/src/Multiplication.cpp"
@@ -91,6 +94,8 @@ set(OLD_GLOB
   "C:/Users/adrie/Desktop/gitC++ Main/Calculatrice/include/Division.h"
   "C:/Users/adrie/Desktop/gitC++ Main/Calculatrice/include/Expression.h"
   "C:/Users/adrie/Desktop/gitC++ Main/Calculatrice/include/ExpressionManager.h"
+  "C:/Users/adrie/Desktop/gitC++ Main/Calculatrice/include/ExpressionModel.h"
+  "C:/Users/adrie/Desktop/gitC++ Main/Calculatrice/include/Graph2dDialog.h"
   "C:/Users/adrie/Desktop/gitC++ Main/Calculatrice/include/Inverse.h"
   "C:/Users/adrie/Desktop/gitC++ Main/Calculatrice/include/LogNeperien.h"
   "C:/Users/adrie/Desktop/gitC++ Main/Calculatrice/include/Multiplication.h"

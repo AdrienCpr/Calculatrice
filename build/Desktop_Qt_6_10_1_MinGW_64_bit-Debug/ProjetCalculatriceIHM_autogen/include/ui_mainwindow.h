@@ -10,6 +10,7 @@
 #define UI_MAINWINDOW_H
 
 #include <QtCore/QVariant>
+#include <QtGui/QAction>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QDoubleSpinBox>
 #include <QtWidgets/QGridLayout>
@@ -17,6 +18,8 @@
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QMainWindow>
+#include <QtWidgets/QMenu>
+#include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPlainTextEdit>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QSpacerItem>
@@ -29,6 +32,19 @@ QT_BEGIN_NAMESPACE
 class Ui_MainWindow
 {
 public:
+    QAction *actionSauvegarder;
+    QAction *actionCharger;
+    QAction *actionSaisieExpression;
+    QAction *actionAffichage_notation_classique;
+    QAction *actionAffichage_notation_P_I;
+    QAction *actionAffichage_valeur;
+    QAction *actionAffichage_graphique_2D;
+    QAction *actionAffichage_graphique_3D;
+    QAction *actionSimplification;
+    QMenuBar *menubar;
+    QMenu *menuFichier;
+    QMenu *menuEdition;
+    QMenu *menuOutils;
     QWidget *centralwidget;
     QVBoxLayout *verticalLayout;
     QLineEdit *leExpr;
@@ -76,6 +92,34 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName("MainWindow");
+        actionSauvegarder = new QAction(MainWindow);
+        actionSauvegarder->setObjectName("actionSauvegarder");
+        actionCharger = new QAction(MainWindow);
+        actionCharger->setObjectName("actionCharger");
+        actionSaisieExpression = new QAction(MainWindow);
+        actionSaisieExpression->setObjectName("actionSaisieExpression");
+        actionAffichage_notation_classique = new QAction(MainWindow);
+        actionAffichage_notation_classique->setObjectName("actionAffichage_notation_classique");
+        actionAffichage_notation_P_I = new QAction(MainWindow);
+        actionAffichage_notation_P_I->setObjectName("actionAffichage_notation_P_I");
+        actionAffichage_valeur = new QAction(MainWindow);
+        actionAffichage_valeur->setObjectName("actionAffichage_valeur");
+        actionAffichage_graphique_2D = new QAction(MainWindow);
+        actionAffichage_graphique_2D->setObjectName("actionAffichage_graphique_2D");
+        actionAffichage_graphique_3D = new QAction(MainWindow);
+        actionAffichage_graphique_3D->setObjectName("actionAffichage_graphique_3D");
+        actionSimplification = new QAction(MainWindow);
+        actionSimplification->setObjectName("actionSimplification");
+        menubar = new QMenuBar(MainWindow);
+        menubar->setObjectName("menubar");
+        menubar->setGeometry(QRect(0, 0, 800, 21));
+        menuFichier = new QMenu(menubar);
+        menuFichier->setObjectName("menuFichier");
+        menuEdition = new QMenu(menubar);
+        menuEdition->setObjectName("menuEdition");
+        menuOutils = new QMenu(menubar);
+        menuOutils->setObjectName("menuOutils");
+        MainWindow->setMenuBar(menubar);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName("centralwidget");
         verticalLayout = new QVBoxLayout(centralwidget);
@@ -286,6 +330,19 @@ public:
         statusbar->setObjectName("statusbar");
         MainWindow->setStatusBar(statusbar);
 
+        menubar->addAction(menuFichier->menuAction());
+        menubar->addAction(menuEdition->menuAction());
+        menubar->addAction(menuOutils->menuAction());
+        menuFichier->addAction(actionSauvegarder);
+        menuFichier->addAction(actionCharger);
+        menuEdition->addAction(actionSaisieExpression);
+        menuEdition->addAction(actionAffichage_notation_classique);
+        menuEdition->addAction(actionAffichage_notation_P_I);
+        menuEdition->addAction(actionAffichage_valeur);
+        menuEdition->addAction(actionAffichage_graphique_2D);
+        menuEdition->addAction(actionAffichage_graphique_3D);
+        menuOutils->addAction(actionSimplification);
+
         retranslateUi(MainWindow);
 
         QMetaObject::connectSlotsByName(MainWindow);
@@ -294,6 +351,18 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "Calculatrice d'expressions", nullptr));
+        actionSauvegarder->setText(QCoreApplication::translate("MainWindow", "Sauvegarder", nullptr));
+        actionCharger->setText(QCoreApplication::translate("MainWindow", "Charger", nullptr));
+        actionSaisieExpression->setText(QCoreApplication::translate("MainWindow", "Saisie de l'expression", nullptr));
+        actionAffichage_notation_classique->setText(QCoreApplication::translate("MainWindow", "Affichage notation classique", nullptr));
+        actionAffichage_notation_P_I->setText(QCoreApplication::translate("MainWindow", "Affichage notation P.I.", nullptr));
+        actionAffichage_valeur->setText(QCoreApplication::translate("MainWindow", "Affichage valeur", nullptr));
+        actionAffichage_graphique_2D->setText(QCoreApplication::translate("MainWindow", "Affichage graphique 2D", nullptr));
+        actionAffichage_graphique_3D->setText(QCoreApplication::translate("MainWindow", "Affichage graphique 3D", nullptr));
+        actionSimplification->setText(QCoreApplication::translate("MainWindow", "Simplification", nullptr));
+        menuFichier->setTitle(QCoreApplication::translate("MainWindow", "Fichier", nullptr));
+        menuEdition->setTitle(QCoreApplication::translate("MainWindow", "Edition", nullptr));
+        menuOutils->setTitle(QCoreApplication::translate("MainWindow", "Outils", nullptr));
         leExpr->setPlaceholderText(QCoreApplication::translate("MainWindow", "Ex: inv(sqrt((20+10)^2)) * ln(abs(-5))", nullptr));
         lblX->setText(QCoreApplication::translate("MainWindow", "x =", nullptr));
         btnSave->setText(QCoreApplication::translate("MainWindow", "Sauver (NPI)", nullptr));
