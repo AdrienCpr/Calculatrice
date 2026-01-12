@@ -320,6 +320,15 @@
 		"C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Charts/Qt6ChartsTargets-relwithdebinfo.cmake",
 		"C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Charts/Qt6ChartsAdditionalTargetInfo.cmake",
 		"C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Charts/Qt6ChartsVersionlessAliasTargets.cmake",
+		"C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6DataVisualization/Qt6DataVisualizationConfigVersion.cmake",
+		"C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6DataVisualization/Qt6DataVisualizationConfigVersionImpl.cmake",
+		"C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6DataVisualization/Qt6DataVisualizationConfig.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake",
+		"C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6DataVisualization/Qt6DataVisualizationDependencies.cmake",
+		"C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6DataVisualization/Qt6DataVisualizationTargets.cmake",
+		"C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6DataVisualization/Qt6DataVisualizationTargets-relwithdebinfo.cmake",
+		"C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6DataVisualization/Qt6DataVisualizationAdditionalTargetInfo.cmake",
+		"C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6DataVisualization/Qt6DataVisualizationVersionlessAliasTargets.cmake",
 		"C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6/Qt6ConfigVersion.cmake",
 		"C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6/Qt6ConfigVersionImpl.cmake",
 		"C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6/Qt6Config.cmake",
@@ -420,6 +429,12 @@
 			null
 		],
 		[
+			"C:/Users/adrie/Desktop/gitC++ Main/Calculatrice/include/Graph3dDialog.h",
+			"MU",
+			"6YEA5652QU/moc_Graph3dDialog.cpp",
+			null
+		],
+		[
 			"C:/Users/adrie/Desktop/gitC++ Main/Calculatrice/include/Inverse.h",
 			"MU",
 			"6YEA5652QU/moc_Inverse.cpp",
@@ -474,6 +489,12 @@
 			null
 		],
 		[
+			"C:/Users/adrie/Desktop/gitC++ Main/Calculatrice/include/SurfaceModel.h",
+			"MU",
+			"6YEA5652QU/moc_SurfaceModel.cpp",
+			null
+		],
+		[
 			"C:/Users/adrie/Desktop/gitC++ Main/Calculatrice/include/TableDesSymboles.h",
 			"MU",
 			"6YEA5652QU/moc_TableDesSymboles.cpp",
@@ -512,6 +533,7 @@
 		"MINGW_HAS_SECURE_API=1",
 		"QT_CHARTS_LIB",
 		"QT_CORE_LIB",
+		"QT_DATAVISUALIZATION_LIB",
 		"QT_GUI_LIB",
 		"QT_OPENGLWIDGETS_LIB",
 		"QT_OPENGL_LIB",
@@ -541,6 +563,7 @@
 		"C:/Qt/6.10.1/mingw_64/include/QtCharts",
 		"C:/Qt/6.10.1/mingw_64/include/QtOpenGL",
 		"C:/Qt/6.10.1/mingw_64/include/QtOpenGLWidgets",
+		"C:/Qt/6.10.1/mingw_64/include/QtDataVisualization",
 		"C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++",
 		"C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32",
 		"C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward",
@@ -612,6 +635,11 @@
 			null
 		],
 		[
+			"C:/Users/adrie/Desktop/gitC++ Main/Calculatrice/src/Graph3dDialog.cpp",
+			"MU",
+			null
+		],
+		[
 			"C:/Users/adrie/Desktop/gitC++ Main/Calculatrice/src/Inverse.cpp",
 			"MU",
 			null
@@ -653,6 +681,11 @@
 		],
 		[
 			"C:/Users/adrie/Desktop/gitC++ Main/Calculatrice/src/Soustraction.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/adrie/Desktop/gitC++ Main/Calculatrice/src/SurfaceModel.cpp",
 			"MU",
 			null
 		],

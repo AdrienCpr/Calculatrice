@@ -340,6 +340,9 @@ Qt6CoreTools_DIR:PATH=C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6CoreTools
 //The directory containing a CMake configuration file for Qt6Core.
 Qt6Core_DIR:PATH=C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Core
 
+//The directory containing a CMake configuration file for Qt6DataVisualization.
+Qt6DataVisualization_DIR:PATH=C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6DataVisualization
+
 //The directory containing a CMake configuration file for Qt6EntryPointPrivate.
 Qt6EntryPointPrivate_DIR:PATH=C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6EntryPointPrivate
 

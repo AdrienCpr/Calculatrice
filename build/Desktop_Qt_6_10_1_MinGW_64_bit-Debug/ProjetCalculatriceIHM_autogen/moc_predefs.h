@@ -86,6 +86,7 @@
 #define __FLT128_MANT_DIG__ 113
 #define __WCHAR_MIN__ 0
 #define __INT64_C(c) c ## LL
+#define QT_DATAVISUALIZATION_LIB 1
 #define __GCC_ATOMIC_POINTER_LOCK_FREE 2
 #define __ATOMIC_SEQ_CST 5
 #define _UNICODE 1

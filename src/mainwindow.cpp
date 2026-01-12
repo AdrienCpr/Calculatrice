@@ -27,6 +27,7 @@
 #include "ValeurAbsolue.h"
 #include "LogNeperien.h"
 #include "Graph2dDialog.h"
+#include "Graph3dDialog.h"
 
 
 // ------------------ helpers affichage ------------------
@@ -384,9 +385,8 @@ void MainWindow::on_actionAffichage_graphique_2D_triggered()
 
 void MainWindow::on_actionAffichage_graphique_3D_triggered()
 {
-    QMessageBox::information(this, "Graphique 3D",
-                             "Non implémenté pour le moment (autorisé).\n"
-                             "Les autres fonctionnalités sont actives.");
+    Graph3DDialog dlg(this);
+    dlg.exec();
 }
 
 void MainWindow::on_actionSimplification_triggered()

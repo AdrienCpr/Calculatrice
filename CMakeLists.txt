@@ -9,8 +9,8 @@ set(CMAKE_AUTORCC ON)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets LinguistTools Charts)
-find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets LinguistTools Charts)
+find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets LinguistTools Charts DataVisualization)
+find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets LinguistTools Charts DataVisualization)
 
 set(TS_FILES ProjetCalculatriceIHM_fr_FR.ts)
 
@@ -47,16 +47,16 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         include/ExpressionManager.h
         include/TestsRunner.h
         src/TestsRunner.cpp
-        include/expressionmodel.h
         include/graph2ddialog.h
         src/graph2ddialog.cpp
-        include/expressionModel.h
-        include/expressionModel.h
-        include/ExpressionModel.h
         include/ExpressionModel.h
         include/graph2DDialog.h
         include/Graph2dDialog.h
         src/Graph2dDialog.cpp
+        include/Graph3dDialog.h
+        src/Graph3dDialog.cpp
+        include/SurfaceModel.h
+        src/SurfaceModel.cpp
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET ProjetCalculatriceIHM APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
@@ -83,6 +83,7 @@ endif()
 target_link_libraries(ProjetCalculatriceIHM PRIVATE
     Qt${QT_VERSION_MAJOR}::Widgets
     Qt${QT_VERSION_MAJOR}::Charts
+    Qt${QT_VERSION_MAJOR}::DataVisualization
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.

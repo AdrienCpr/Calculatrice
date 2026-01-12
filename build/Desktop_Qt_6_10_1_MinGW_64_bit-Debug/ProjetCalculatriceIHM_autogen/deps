@@ -298,6 +298,14 @@ ProjetCalculatriceIHM_autogen/timestamp: \
 	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargets-relwithdebinfo.cmake \
 	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargets.cmake \
 	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsVersionlessTargets.cmake \
+	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6DataVisualization/Qt6DataVisualizationAdditionalTargetInfo.cmake \
+	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6DataVisualization/Qt6DataVisualizationConfig.cmake \
+	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6DataVisualization/Qt6DataVisualizationConfigVersion.cmake \
+	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6DataVisualization/Qt6DataVisualizationConfigVersionImpl.cmake \
+	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6DataVisualization/Qt6DataVisualizationDependencies.cmake \
+	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6DataVisualization/Qt6DataVisualizationTargets-relwithdebinfo.cmake \
+	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6DataVisualization/Qt6DataVisualizationTargets.cmake \
+	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6DataVisualization/Qt6DataVisualizationVersionlessAliasTargets.cmake \
 	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointMinGW32Target.cmake \
 	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateAdditionalTargetInfo.cmake \
 	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateConfig.cmake \
@@ -671,6 +679,7 @@ ProjetCalculatriceIHM_autogen/timestamp: \
 	C:/Users/adrie/Desktop/gitC++\ Main/Calculatrice/include/ExpressionManager.h \
 	C:/Users/adrie/Desktop/gitC++\ Main/Calculatrice/include/ExpressionModel.h \
 	C:/Users/adrie/Desktop/gitC++\ Main/Calculatrice/include/Graph2dDialog.h \
+	C:/Users/adrie/Desktop/gitC++\ Main/Calculatrice/include/Graph3dDialog.h \
 	C:/Users/adrie/Desktop/gitC++\ Main/Calculatrice/include/Inverse.h \
 	C:/Users/adrie/Desktop/gitC++\ Main/Calculatrice/include/LogNeperien.h \
 	C:/Users/adrie/Desktop/gitC++\ Main/Calculatrice/include/Multiplication.h \
@@ -680,6 +689,7 @@ ProjetCalculatriceIHM_autogen/timestamp: \
 	C:/Users/adrie/Desktop/gitC++\ Main/Calculatrice/include/Puissance.h \
 	C:/Users/adrie/Desktop/gitC++\ Main/Calculatrice/include/RacineCarree.h \
 	C:/Users/adrie/Desktop/gitC++\ Main/Calculatrice/include/Soustraction.h \
+	C:/Users/adrie/Desktop/gitC++\ Main/Calculatrice/include/SurfaceModel.h \
 	C:/Users/adrie/Desktop/gitC++\ Main/Calculatrice/include/TableDesSymboles.h \
 	C:/Users/adrie/Desktop/gitC++\ Main/Calculatrice/include/TestsRunner.h \
 	C:/Users/adrie/Desktop/gitC++\ Main/Calculatrice/include/ValeurAbsolue.h \
@@ -691,6 +701,7 @@ ProjetCalculatriceIHM_autogen/timestamp: \
 	C:/Users/adrie/Desktop/gitC++\ Main/Calculatrice/src/Division.cpp \
 	C:/Users/adrie/Desktop/gitC++\ Main/Calculatrice/src/Expression.cpp \
 	C:/Users/adrie/Desktop/gitC++\ Main/Calculatrice/src/Graph2dDialog.cpp \
+	C:/Users/adrie/Desktop/gitC++\ Main/Calculatrice/src/Graph3dDialog.cpp \
 	C:/Users/adrie/Desktop/gitC++\ Main/Calculatrice/src/Inverse.cpp \
 	C:/Users/adrie/Desktop/gitC++\ Main/Calculatrice/src/LogNeperien.cpp \
 	C:/Users/adrie/Desktop/gitC++\ Main/Calculatrice/src/Multiplication.cpp \
@@ -700,6 +711,7 @@ ProjetCalculatriceIHM_autogen/timestamp: \
 	C:/Users/adrie/Desktop/gitC++\ Main/Calculatrice/src/Puissance.cpp \
 	C:/Users/adrie/Desktop/gitC++\ Main/Calculatrice/src/RacineCarree.cpp \
 	C:/Users/adrie/Desktop/gitC++\ Main/Calculatrice/src/Soustraction.cpp \
+	C:/Users/adrie/Desktop/gitC++\ Main/Calculatrice/src/SurfaceModel.cpp \
 	C:/Users/adrie/Desktop/gitC++\ Main/Calculatrice/src/TableDesSymboles.cpp \
 	C:/Users/adrie/Desktop/gitC++\ Main/Calculatrice/src/TestsRunner.cpp \
 	C:/Users/adrie/Desktop/gitC++\ Main/Calculatrice/src/ValeurAbsolue.cpp \
