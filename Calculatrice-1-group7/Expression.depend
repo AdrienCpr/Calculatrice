@@ -1,0 +1,255 @@
+# depslib dependency file v1.0
+1669930285 source:j:\documents de alain\cours\c++\projets\projet expression\squelette\main.cpp
+	<iostream>
+	"Constante.h"
+	"Addition.h"
+	"Soustraction.h"
+	"Division.h"
+	"Multiplication.h"
+
+1669983473 j:\documents de alain\cours\c++\projets\projet expression\squelette\include\constante.h
+	"Expression.h"
+
+1669983473 j:\documents de alain\cours\c++\projets\projet expression\squelette\include\expression.h
+	<iostream>
+
+1669983473 j:\documents de alain\cours\c++\projets\projet expression\squelette\include\addition.h
+	"OperateurBinaire.h"
+
+1669929395 j:\documents de alain\cours\c++\projets\projet expression\squelette\include\operateurbinaire.h
+	"Expression.h"
+
+1669930070 j:\documents de alain\cours\c++\projets\projet expression\squelette\include\soustraction.h
+	"OperateurBinaire.h"
+
+1669983473 j:\documents de alain\cours\c++\projets\projet expression\squelette\include\division.h
+	"OperateurBinaire.h"
+
+1669983473 j:\documents de alain\cours\c++\projets\projet expression\squelette\include\multiplication.h
+	"OperateurBinaire.h"
+
+1669983473 source:j:\documents de alain\cours\c++\projets\projet expression\squelette\src\addition.cpp
+	"Addition.h"
+
+1669983473 source:j:\documents de alain\cours\c++\projets\projet expression\squelette\src\constante.cpp
+	"Constante.h"
+
+1669983473 source:j:\documents de alain\cours\c++\projets\projet expression\squelette\src\division.cpp
+	"Division.h"
+
+1669929016 source:j:\documents de alain\cours\c++\projets\projet expression\squelette\src\expression.cpp
+	"Expression.h"
+
+1669983473 source:j:\documents de alain\cours\c++\projets\projet expression\squelette\src\multiplication.cpp
+	"Multiplication.h"
+
+1669930443 source:j:\documents de alain\cours\c++\projets\projet expression\squelette\src\operateurbinaire.cpp
+	"OperateurBinaire.h"
+
+1669930443 source:j:\documents de alain\cours\c++\projets\projet expression\squelette\src\soustraction.cpp
+	"Soustraction.h"
+
+1762953227 source:c:\users\adrie\desktop\isen\4a\poo\squelette\main.cpp
+	<iostream>
+	"Constante.h"
+	"Addition.h"
+	"Soustraction.h"
+	"Division.h"
+	"Multiplication.h"
+
+1762950810 c:\users\adrie\desktop\isen\4a\poo\squelette\include\constante.h
+	"Expression.h"
+
+1762950810 c:\users\adrie\desktop\isen\4a\poo\squelette\include\expression.h
+	<iostream>
+
+1762950810 c:\users\adrie\desktop\isen\4a\poo\squelette\include\addition.h
+	"OperateurBinaire.h"
+
+1762950810 c:\users\adrie\desktop\isen\4a\poo\squelette\include\operateurbinaire.h
+	"Expression.h"
+
+1762950810 c:\users\adrie\desktop\isen\4a\poo\squelette\include\soustraction.h
+	"OperateurBinaire.h"
+
+1762950810 c:\users\adrie\desktop\isen\4a\poo\squelette\include\division.h
+	"OperateurBinaire.h"
+
+1762950810 c:\users\adrie\desktop\isen\4a\poo\squelette\include\multiplication.h
+	"OperateurBinaire.h"
+
+1762954332 source:c:\users\adrie\desktop\isen\4a\poo\squelette\src\addition.cpp
+	"Addition.h"
+
+1762952101 source:c:\users\adrie\desktop\isen\4a\poo\squelette\src\constante.cpp
+	"Constante.h"
+
+1762954724 source:c:\users\adrie\desktop\isen\4a\poo\squelette\src\division.cpp
+	"Division.h"
+
+1762950810 source:c:\users\adrie\desktop\isen\4a\poo\squelette\src\expression.cpp
+	"Expression.h"
+
+1762954328 source:c:\users\adrie\desktop\isen\4a\poo\squelette\src\multiplication.cpp
+	"Multiplication.h"
+
+1762953149 source:c:\users\adrie\desktop\isen\4a\poo\squelette\src\operateurbinaire.cpp
+	"OperateurBinaire.h"
+
+1762954548 source:c:\users\adrie\desktop\isen\4a\poo\squelette\src\soustraction.cpp
+	"Soustraction.h"
+
+1766313235 source:d:\utilisateur\izi-a\desktop\iut\itii\a4\poo\calculatrice-1-group7\main.cpp
+	<iostream>
+	"Constante.h"
+	"Addition.h"
+	"Soustraction.h"
+	"Division.h"
+	"Multiplication.h"
+	<memory>
+	"ConstExpr.h"
+	"BinaryExpr.h"
+
+1767535347 d:\utilisateur\izi-a\desktop\iut\itii\a4\poo\calculatrice-1-group7\include\constante.h
+	"Expression.h"
+	<iostream>
+	"ConstExpr.h"
+
+1766313235 d:\utilisateur\izi-a\desktop\iut\itii\a4\poo\calculatrice-1-group7\include\expression.h
+	<memory>
+	<iostream>
+
+1767535347 d:\utilisateur\izi-a\desktop\iut\itii\a4\poo\calculatrice-1-group7\include\addition.h
+	"OperateurBinaire.h"
+	<iostream>
+	"ConstExpr.h"
+	"BinaryExpr.h"
+
+1767535348 d:\utilisateur\izi-a\desktop\iut\itii\a4\poo\calculatrice-1-group7\include\operateurbinaire.h
+	"Expression.h"
+	<utility>
+
+1767535348 d:\utilisateur\izi-a\desktop\iut\itii\a4\poo\calculatrice-1-group7\include\soustraction.h
+	"OperateurBinaire.h"
+	<iostream>
+	"ConstExpr.h"
+	"BinaryExpr.h"
+
+1767535348 d:\utilisateur\izi-a\desktop\iut\itii\a4\poo\calculatrice-1-group7\include\division.h
+	"OperateurBinaire.h"
+	<iostream>
+	"ConstExpr.h"
+	"BinaryExpr.h"
+
+1767535347 d:\utilisateur\izi-a\desktop\iut\itii\a4\poo\calculatrice-1-group7\include\multiplication.h
+	"OperateurBinaire.h"
+	<iostream>
+	"ConstExpr.h"
+	"BinaryExpr.h"
+
+1766313235 d:\utilisateur\izi-a\desktop\iut\itii\a4\poo\calculatrice-1-group7\include\constexpr.h
+	"Expression.h"
+
+1766313235 d:\utilisateur\izi-a\desktop\iut\itii\a4\poo\calculatrice-1-group7\include\binaryexpr.h
+	"Expression.h"
+	"ConstExpr.h"
+	<memory>
+
+1766313235 source:d:\utilisateur\izi-a\desktop\iut\itii\a4\poo\calculatrice-1-group7\src\addition.cpp
+	"Addition.h"
+
+1766313235 source:d:\utilisateur\izi-a\desktop\iut\itii\a4\poo\calculatrice-1-group7\src\constante.cpp
+	"Constante.h"
+
+1766313235 source:d:\utilisateur\izi-a\desktop\iut\itii\a4\poo\calculatrice-1-group7\src\division.cpp
+	"Division.h"
+
+1766313235 source:d:\utilisateur\izi-a\desktop\iut\itii\a4\poo\calculatrice-1-group7\src\expression.cpp
+	"Expression.h"
+
+1766313235 source:d:\utilisateur\izi-a\desktop\iut\itii\a4\poo\calculatrice-1-group7\src\multiplication.cpp
+	"Multiplication.h"
+
+1766313235 source:d:\utilisateur\izi-a\desktop\iut\itii\a4\poo\calculatrice-1-group7\src\operateurbinaire.cpp
+	"OperateurBinaire.h"
+
+1766313235 source:d:\utilisateur\izi-a\desktop\iut\itii\a4\poo\calculatrice-1-group7\src\soustraction.cpp
+	"Soustraction.h"
+
+1766313235 source:d:\utilisateur\izi-a\desktop\iut\itii\a4\poo\projet\calculatrice-1-group7\main.cpp
+	<iostream>
+	"Constante.h"
+	"Addition.h"
+	"Soustraction.h"
+	"Division.h"
+	"Multiplication.h"
+	<memory>
+	"ConstExpr.h"
+	"BinaryExpr.h"
+
+1767535347 d:\utilisateur\izi-a\desktop\iut\itii\a4\poo\projet\calculatrice-1-group7\include\constante.h
+	"Expression.h"
+	<iostream>
+	"ConstExpr.h"
+
+1766313235 d:\utilisateur\izi-a\desktop\iut\itii\a4\poo\projet\calculatrice-1-group7\include\expression.h
+	<memory>
+	<iostream>
+
+1766313235 d:\utilisateur\izi-a\desktop\iut\itii\a4\poo\projet\calculatrice-1-group7\include\constexpr.h
+	"Expression.h"
+
+1767535347 d:\utilisateur\izi-a\desktop\iut\itii\a4\poo\projet\calculatrice-1-group7\include\addition.h
+	"OperateurBinaire.h"
+	<iostream>
+	"ConstExpr.h"
+	"BinaryExpr.h"
+
+1767535348 d:\utilisateur\izi-a\desktop\iut\itii\a4\poo\projet\calculatrice-1-group7\include\operateurbinaire.h
+	"Expression.h"
+	<utility>
+
+1766313235 d:\utilisateur\izi-a\desktop\iut\itii\a4\poo\projet\calculatrice-1-group7\include\binaryexpr.h
+	"Expression.h"
+	"ConstExpr.h"
+	<memory>
+
+1767535348 d:\utilisateur\izi-a\desktop\iut\itii\a4\poo\projet\calculatrice-1-group7\include\soustraction.h
+	"OperateurBinaire.h"
+	<iostream>
+	"ConstExpr.h"
+	"BinaryExpr.h"
+
+1767535348 d:\utilisateur\izi-a\desktop\iut\itii\a4\poo\projet\calculatrice-1-group7\include\division.h
+	"OperateurBinaire.h"
+	<iostream>
+	"ConstExpr.h"
+	"BinaryExpr.h"
+
+1767535347 d:\utilisateur\izi-a\desktop\iut\itii\a4\poo\projet\calculatrice-1-group7\include\multiplication.h
+	"OperateurBinaire.h"
+	<iostream>
+	"ConstExpr.h"
+	"BinaryExpr.h"
+
+1767535347 source:d:\utilisateur\izi-a\desktop\iut\itii\a4\poo\projet\calculatrice-1-group7\src\addition.cpp
+	"Addition.h"
+
+1767535347 source:d:\utilisateur\izi-a\desktop\iut\itii\a4\poo\projet\calculatrice-1-group7\src\constante.cpp
+	"Constante.h"
+
+1767535350 source:d:\utilisateur\izi-a\desktop\iut\itii\a4\poo\projet\calculatrice-1-group7\src\division.cpp
+	"Division.h"
+
+1767535380 source:d:\utilisateur\izi-a\desktop\iut\itii\a4\poo\projet\calculatrice-1-group7\src\expression.cpp
+	"Expression.h"
+
+1767535347 source:d:\utilisateur\izi-a\desktop\iut\itii\a4\poo\projet\calculatrice-1-group7\src\multiplication.cpp
+	"Multiplication.h"
+
+1766313235 source:d:\utilisateur\izi-a\desktop\iut\itii\a4\poo\projet\calculatrice-1-group7\src\operateurbinaire.cpp
+	"OperateurBinaire.h"
+
+1767535347 source:d:\utilisateur\izi-a\desktop\iut\itii\a4\poo\projet\calculatrice-1-group7\src\soustraction.cpp
+	"Soustraction.h"
+
